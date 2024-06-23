@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+font-family: Calibri, Helvetica, sans-serif;
+background-color: pink;
+}.container {
+padding: 50px;
+background-color: lightblue;
+}
+input[type=text], input[type=password], textarea {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+background-color: orange;
+outline: none;
+}
+div {
+padding: 10px 0;
+}
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+.registerbtn {
+background-color: #4CAF50;
+color: white;
+padding: 16px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+.registerbtn:hover {
+opacity: 1;
+}
+</style>
+</head>
+<body>
+<form name="regist" method="post" action="registration.php">
+<div class="container">
+<center> <h1> Student Registration Form</h1> </center>
+<hr>
+<!--ID:<input type="number" name="id" value=""></br>
+NAME:<input type="text" name="name" value=""></br> -->
+<label> Firstname </label>
+<input type="text" name="first_name" placeholder= "Firstname" size="15" required />
+<label> Lastname: </label>
+<input type="text" name="last_name" placeholder="Lastname" size="15"required />
+<div>
+<select name="techevents"><option value="techevents">techevents</option>
+<option value="hackathon">hackathon</option>
+<option value="blindcoding">blindcoding</option>
+<option value="fasttyping">fasttyping</option>
+<option value="projectdisplay">projectdisplay</option>
+<option value="websitedev">websitedev</option>
+</select>
+<select name="fungames">
+<option value="fungames">fungames</option>
+<option value="puzzlesolving">puzzlesolving</option>
+<option value="blowthwballoon">blowtheballoon</option>
+<option value="spotpainting">spotpainting</option>
+<option value="pyramids">pyramids</option>
+<option value="tugofwar">tugofwar</option>
+</select>
+<select name="culturals">
+<option value="culturals">culturals</option>
+<option value="singing">singing</option>
+<option value="dancing">dancing</option>
+<option value="dramas">dramas</option>
+<option value="mimicry">mimicry</option>
+<option value="standupcomedy">standupcomedy</option>
+</select>
+</div>
+<div>
+<label>
+Gender :
+</label><br>
+<input type="radio" value="Male" name="gender" > Male
+<input type="radio" value="Female" name="gender"> Female
+</div>
+<label>
+Phone :
+</label>
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>
+<label for="email"><b>Email</b></label>
+<input type="text" placeholder="Enter Email" name="email" required>
+<button type="submit" class="registerbtn" name="submit">Register</button>
+</form>
+</body>
+</html>
